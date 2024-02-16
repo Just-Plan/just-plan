@@ -24,7 +24,7 @@ spec:
       volumes:
         - name: nginx-config
           configMap:
-            name: nginx-878mt4ch6c
+            name: nginx
 
 ---
 apiVersion: v1
