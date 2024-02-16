@@ -32,7 +32,7 @@ spec:
               port: 8080
           volumeMounts:
             - name: application-yml-volume
-              mountPath: /backend/config
+              mountPath: /backend
               subPath: application.yml
               readOnly: true
       volumes:
