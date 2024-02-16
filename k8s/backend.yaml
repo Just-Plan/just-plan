@@ -13,7 +13,6 @@ spec:
     spec:
       containers:
         - name: backend
-          # 여러분의 frontend image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_fdd83d4a9779
           env:
             - name: TZ
@@ -22,6 +21,8 @@ spec:
               value: redis
             - name: REDIS_PORT
               value: "6379"
+            - name: SPRING_PROFILES_ACTIVE
+              value: "prod"
           resources:
             requests:
               memory: "1Gi"
